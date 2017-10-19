@@ -37,15 +37,6 @@ public class DrawerActivity extends AppCompatActivity
 
         initializeDrawer();
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -58,7 +49,8 @@ public class DrawerActivity extends AppCompatActivity
 
     public void setUpActionBar(){
         setSupportActionBar(toolbar);
-
+        getSupportActionBar().setTitle(null);
+        getSupportActionBar().setIcon(R.drawable.beep_title_small);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
@@ -72,7 +64,7 @@ public class DrawerActivity extends AppCompatActivity
         navHeaders.add(R.drawable.drawer_wallpaper);
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        //navigationView.getHeaderView(0).findViewById(R.id.nav_header_drawer).setBackgroundResource(navHeaders.get(0);
+        navigationView.getHeaderView(0).findViewById(R.id.nav_header_drawer).setBackgroundResource(navHeaders.get(0));
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.getMenu().getItem(1).setChecked(true);
     }
