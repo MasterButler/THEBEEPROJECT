@@ -22,7 +22,7 @@ public class WelcomeActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent homeIntent = new Intent(WelcomeActivity.this, HomepageActivity.class);
+                Intent homeIntent = new Intent(WelcomeActivity.this, LoginActivity.class);
                 startActivity(homeIntent);
                 finish();
             }

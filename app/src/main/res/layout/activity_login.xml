@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ph.edu.mobapde.meditake.thebeeproject.HomepageActivity">
+    tools:context="ph.edu.mobapde.meditake.thebeeproject.LoginActivity">
 
-    <include layout="@layout/content_homepage" />
+    <include layout="@layout/content_login" />
 
 </android.support.design.widget.CoordinatorLayout>
