@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
 
     @OnClick(R.id.signin)
     public void signin(View view) {
-        Intent i = new Intent(this, DrawerActivity.class);
+        Intent i = new Intent(this, HomeActivity.class);
         startActivity(i);
     }
 
