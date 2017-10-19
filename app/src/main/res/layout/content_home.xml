@@ -8,13 +8,50 @@
     tools:context="ph.edu.mobapde.meditake.thebeeproject.HomeActivity"
     tools:showIn="@layout/app_bar_home">
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="386dp"
+        android:layout_height="153dp"
+        app:srcCompat="@drawable/beep-card"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-8dp" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/textView5"
+        android:layout_width="131dp"
+        android:layout_height="21dp"
+        android:text="6378050000617980"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012"
+        tools:layout_editor_absoluteX="241dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P250.00"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="113dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="389dp"
+        android:layout_height="224dp"
+        app:srcCompat="@drawable/promo"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="386dp"
+        android:layout_height="236dp"
+        app:srcCompat="@drawable/promo2"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="121dp" />
 
 </android.support.constraint.ConstraintLayout>
