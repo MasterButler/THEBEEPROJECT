@@ -27,7 +27,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".FeedbackActivity" />
-        <activity android:name=".CardsActivity"></activity>
+        <activity android:name=".CardsActivity" />
+        <activity android:name=".TransitActivity"></activity>
     </application>
 
 </manifest>
