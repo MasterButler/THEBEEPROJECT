@@ -1,10 +1,13 @@
 package ph.edu.mobapde.meditake.thebeeproject.util;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import ph.edu.mobapde.meditake.thebeeproject.FeedbackActivity;
+import ph.edu.mobapde.meditake.thebeeproject.HomeActivity;
 import ph.edu.mobapde.meditake.thebeeproject.R;
 
 /**
@@ -16,6 +19,8 @@ public class DrawerUtil {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        Intent i;
+
         switch (id){
             case R.id.nav_camera:
                 break;
@@ -26,6 +31,9 @@ public class DrawerUtil {
             case R.id.nav_train:
                 break;
             case R.id.nav_feedback:
+                i = new Intent();
+                i.setClass(activity.getBaseContext(), FeedbackActivity.class);
+                activity.startActivity(i);
                 break;
             case R.id.nav_logout:
                 break;

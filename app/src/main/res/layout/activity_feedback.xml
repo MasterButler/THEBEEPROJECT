@@ -1,43 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
     tools:context="ph.edu.mobapde.meditake.thebeeproject.FeedbackActivity">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="65dp"
-        android:layout_height="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
         android:text="Feedback"
-        tools:layout_editor_absoluteX="16dp"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="8dp"
+
         tools:layout_editor_absoluteY="26dp" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Subject:"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="80dp" />
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject:"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="86dp" />
+
+        <EditText
+            android:id="@+id/subTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Subject Title"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="77dp" />
+    </LinearLayout>
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/content"
         android:layout_width="324dp"
         android:layout_height="254dp"
         android:ems="10"
+        android:hint="Content here"
         android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="18dp"
         tools:layout_editor_absoluteY="155dp"
-        tools:layout_editor_absoluteX="18dp" />
+        android:layout_gravity="center"/>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:text="Submit"
-        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteX="134dp"
         tools:layout_editor_absoluteY="433dp" />
-</android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>
