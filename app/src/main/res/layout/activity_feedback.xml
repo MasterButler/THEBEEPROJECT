@@ -1,71 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginTop="20dp"
-    android:orientation="vertical"
-    android:layout_gravity="center"
-    tools:context="ph.edu.mobapde.meditake.thebeeproject.FeedbackActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView2"
+    <ImageView
+        android:id="@+id/imageView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
-        android:text="Feedback"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="8dp"
-
-        tools:layout_editor_absoluteY="26dp" />
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/vector_large" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="20dp">
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        tools:context="ph.edu.mobapde.meditake.thebeeproject.FeedbackActivity"
+        android:weightSum="1">
 
         <TextView
-            android:id="@+id/S"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Subject:"
-            android:textSize="20sp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="86dp" />
-
-        <EditText
-            android:id="@+id/subTitle"
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="leave us a message"
+            android:textColor="White"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="8dp"
+
+            tools:layout_editor_absoluteY="26dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name"
+                android:textColor="White"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="89dp"
+                tools:layout_editor_absoluteY="77dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:textColor="White"
+                tools:layout_editor_absoluteX="89dp"
+                tools:layout_editor_absoluteY="77dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Phone number"
+                android:inputType="textPersonName"
+                android:textColor="White"
+                tools:layout_editor_absoluteX="89dp"
+                tools:layout_editor_absoluteY="77dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="324dp"
+            android:layout_height="131dp"
+            android:layout_gravity="center"
             android:ems="10"
-            android:hint="Subject Title"
-            android:inputType="textPersonName"
-            tools:layout_editor_absoluteX="89dp"
-            tools:layout_editor_absoluteY="77dp" />
+            android:hint="Message"
+            android:textColor="White"
+            android:inputType="textMultiLine"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="155dp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="30dp"
+            android:text="Submit"
+            tools:layout_editor_absoluteX="134dp"
+            tools:layout_editor_absoluteY="433dp" />
+
+
     </LinearLayout>
+</RelativeLayout>
 
-    <EditText
-        android:id="@+id/content"
-        android:layout_width="324dp"
-        android:layout_height="254dp"
-        android:ems="10"
-        android:hint="Content here"
-        android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="155dp"
-        android:layout_gravity="center"/>
-
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="Submit"
-        tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="433dp" />
-
-
-</LinearLayout>
