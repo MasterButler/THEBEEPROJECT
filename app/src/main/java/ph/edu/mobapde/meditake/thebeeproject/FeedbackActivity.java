@@ -14,8 +14,8 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class FeedbackActivity extends AppCompatActivity {
-    @BindView(R.id.subTitle)
-    EditText subTitle;
+    @BindView(R.id.name)
+    EditText name;
 
     @BindView(R.id.content)
     EditText content;
@@ -29,7 +29,7 @@ public class FeedbackActivity extends AppCompatActivity {
 
     @OnClick(R.id.submit)
     public void submitFeed(View view) {
-        subTitle.setText("");
+        name.setText("");
         content.setText("");
 
         Toast.makeText(this.getBaseContext(), "Successfully submitted feedback", Toast.LENGTH_SHORT);

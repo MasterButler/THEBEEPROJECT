@@ -30,7 +30,7 @@
             android:layout_marginBottom="20dp"
             android:gravity="center"
             android:text="leave us a message"
-            android:textColor="White"
+            android:textColor="#ffffff"
             android:textSize="20sp"
             tools:layout_editor_absoluteX="8dp"
 
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Name"
-                android:textColor="White"
+                android:textColor="#ffffff"
                 android:inputType="textPersonName"
                 tools:layout_editor_absoluteX="89dp"
                 tools:layout_editor_absoluteY="77dp" />
@@ -69,7 +69,7 @@
                 android:ems="10"
                 android:hint="Email"
                 android:inputType="textPersonName"
-                android:textColor="White"
+                android:textColor="#ffffff"
                 tools:layout_editor_absoluteX="89dp"
                 tools:layout_editor_absoluteY="77dp" />
 
@@ -89,7 +89,7 @@
                 android:ems="10"
                 android:hint="Phone number"
                 android:inputType="textPersonName"
-                android:textColor="White"
+                android:textColor="#ffffff"
                 tools:layout_editor_absoluteX="89dp"
                 tools:layout_editor_absoluteY="77dp" />
 
@@ -102,7 +102,7 @@
             android:layout_gravity="center"
             android:ems="10"
             android:hint="Message"
-            android:textColor="White"
+            android:textColor="#ffffff"
             android:inputType="textMultiLine"
             tools:layout_editor_absoluteX="18dp"
             tools:layout_editor_absoluteY="155dp" />
