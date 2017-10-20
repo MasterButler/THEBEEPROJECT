@@ -12,7 +12,7 @@
         android:id="@+id/imageButton"
         android:layout_width="386dp"
         android:layout_height="153dp"
-        app:srcCompat="@drawable/beep-card"
+        app:srcCompat="@drawable/beep_card"
         tools:layout_editor_absoluteX="-1dp"
         tools:layout_editor_absoluteY="-8dp" />
 

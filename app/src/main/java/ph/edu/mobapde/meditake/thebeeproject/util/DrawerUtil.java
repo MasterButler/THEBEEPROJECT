@@ -9,6 +9,7 @@ import android.widget.Toast;
 import ph.edu.mobapde.meditake.thebeeproject.FeedbackActivity;
 import ph.edu.mobapde.meditake.thebeeproject.HomeActivity;
 import ph.edu.mobapde.meditake.thebeeproject.R;
+import ph.edu.mobapde.meditake.thebeeproject.TransitActivity;
 
 /**
  * Created by Winfred Villaluna on 10/20/2017.
@@ -29,6 +30,9 @@ public class DrawerUtil {
             case R.id.nav_presents:
                 break;
             case R.id.nav_train:
+                i = new Intent();
+                i.setClass(activity.getBaseContext(), TransitActivity.class);
+                activity.startActivity(i);
                 break;
             case R.id.nav_feedback:
                 i = new Intent();

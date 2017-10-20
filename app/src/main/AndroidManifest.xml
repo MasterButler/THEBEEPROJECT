@@ -28,7 +28,8 @@
         </activity>
         <activity android:name=".FeedbackActivity" />
         <activity android:name=".CardsActivity" />
-        <activity android:name=".TransitActivity"></activity>
+        <activity android:name=".TransitActivity" />
+        <activity android:name=".BeepCityActivity"></activity>
     </application>
 
 </manifest>
