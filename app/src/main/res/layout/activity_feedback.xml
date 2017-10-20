@@ -48,6 +48,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Name"
+                android:textColorHint="#ffffff"
                 android:textColor="#ffffff"
                 android:inputType="textPersonName"
                 tools:layout_editor_absoluteX="89dp"
@@ -69,6 +70,7 @@
                 android:ems="10"
                 android:hint="Email"
                 android:inputType="textPersonName"
+                android:textColorHint="#ffffff"
                 android:textColor="#ffffff"
                 tools:layout_editor_absoluteX="89dp"
                 tools:layout_editor_absoluteY="77dp" />
@@ -89,6 +91,7 @@
                 android:ems="10"
                 android:hint="Phone number"
                 android:inputType="textPersonName"
+                android:textColorHint="#ffffff"
                 android:textColor="#ffffff"
                 tools:layout_editor_absoluteX="89dp"
                 tools:layout_editor_absoluteY="77dp" />
@@ -102,6 +105,7 @@
             android:layout_gravity="center"
             android:ems="10"
             android:hint="Message"
+            android:textColorHint="#ffffff"
             android:textColor="#ffffff"
             android:inputType="textMultiLine"
             tools:layout_editor_absoluteX="18dp"
