@@ -5,7 +5,7 @@
         android:id="@+id/group1"
         android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_home"
             android:icon="@drawable/ic_home_black_24dp"
             android:title="Home" />
         <item
@@ -20,6 +20,10 @@
             android:id="@+id/nav_train"
             android:icon="@drawable/ic_train_black_24dp"
             android:title="Transit Lines" />
+        <item
+            android:id="@+id/nav_game"
+            android:icon="@drawable/ic_location_city_black_24dp"
+            android:title="Beep City" />
     </group>
 
     <group

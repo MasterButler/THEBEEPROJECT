@@ -7,14 +7,20 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.MediaController;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import ph.edu.mobapde.meditake.thebeeproject.util.DrawerUtil;
+import pl.droidsonroids.gif.AnimationListener;
+import pl.droidsonroids.gif.GifDrawable;
+import pl.droidsonroids.gif.GifImageView;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -25,6 +31,11 @@ public class HomeActivity extends AppCompatActivity
     @BindView(R.id.toolbar)
     Toolbar toolbar;
 
+    @BindView(R.id.gif_whatsnew)
+    GifImageView gifImageView;
+
+    GifDrawable gifWhatsNew;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +45,7 @@ public class HomeActivity extends AppCompatActivity
         setUpActionBar();
 
         initializeDrawer();
+        initializeGif();
     }
 
     public void setUpActionBar(){
@@ -55,7 +67,25 @@ public class HomeActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.getHeaderView(0).findViewById(R.id.nav_header_drawer).setBackgroundResource(navHeaders.get(0));
         navigationView.setNavigationItemSelectedListener(this);
-        navigationView.getMenu().getItem(1).setChecked(true);
+        navigationView.getMenu().getItem(0).setChecked(true);
+    }
+
+    public void initializeGif(){
+        try {
+
+            gifWhatsNew = new GifDrawable(getApplicationContext().getResources(), R.drawable.promo);
+            gifImageView.setImageResource(R.drawable.promo);
+
+
+
+            Log.d("START", "HEH");
+            Log.d("HERE", "" + gifWhatsNew.getDuration());
+            gifWhatsNew.setLoopCount(0);
+            gifWhatsNew.start();
+            Log.d("END", "HEH");
+        }catch(Exception e){
+            Log.d("ERROR", "HUH");
+        }
     }
 
     @Override
