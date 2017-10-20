@@ -110,14 +110,21 @@
         android:weightSum="1"
         android:layout_weight="0.39">
 
-        <pl.droidsonroids.gif.GifImageView
+        <!--<pl.droidsonroids.gif.GifImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="98dp"-->
+            <!--android:id="@+id/gif_whatsnew"-->
+            <!--android:src="@drawable/promo"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:layout_weight="0.61" />-->
+        <TextView
+            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:layout_height="98dp"
-            android:id="@+id/gif_whatsnew"
-            android:src="@drawable/promo"
-            android:scaleType="centerCrop"
-            android:layout_weight="0.61" />
-
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="What's New?"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"/>
 
         <pl.droidsonroids.gif.GifImageView
             android:layout_width="match_parent"

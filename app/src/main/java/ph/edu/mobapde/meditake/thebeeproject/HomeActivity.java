@@ -31,8 +31,11 @@ public class HomeActivity extends AppCompatActivity
     @BindView(R.id.toolbar)
     Toolbar toolbar;
 
-    @BindView(R.id.gif_whatsnew)
-    GifImageView gifImageView;
+//    @BindView(R.id.gif_whatsnew)
+//    GifImageView gifImageView;
+
+//    @BindView(R.id.gif_whatsnew)
+//    GifImageView gifImageView;
 
     GifDrawable gifWhatsNew;
 
@@ -45,7 +48,7 @@ public class HomeActivity extends AppCompatActivity
         setUpActionBar();
 
         initializeDrawer();
-        initializeGif();
+//        initializeGif();
     }
 
     public void setUpActionBar(){
@@ -69,24 +72,24 @@ public class HomeActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.getMenu().getItem(0).setChecked(true);
     }
-
-    public void initializeGif(){
-        try {
-
-            gifWhatsNew = new GifDrawable(getApplicationContext().getResources(), R.drawable.promo);
-            gifImageView.setImageResource(R.drawable.promo);
-
-
-
-            Log.d("START", "HEH");
-            Log.d("HERE", "" + gifWhatsNew.getDuration());
-            gifWhatsNew.setLoopCount(0);
-            gifWhatsNew.start();
-            Log.d("END", "HEH");
-        }catch(Exception e){
-            Log.d("ERROR", "HUH");
-        }
-    }
+//
+//    public void initializeGif(){
+//        try {
+//
+//            gifWhatsNew = new GifDrawable(getApplicationContext().getResources(), R.drawable.promo);
+//            gifImageView.setImageResource(R.drawable.promo);
+//
+//
+//
+//            Log.d("START", "HEH");
+//            Log.d("HERE", "" + gifWhatsNew.getDuration());
+//            gifWhatsNew.setLoopCount(0);
+//            gifWhatsNew.start();
+//            Log.d("END", "HEH");
+//        }catch(Exception e){
+//            Log.d("ERROR", "HUH");
+//        }
+//    }
 
     @Override
     public void onBackPressed() {
